@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador EMOM</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ENjdO4Dr2bkBIFxQpeoHllCcWA3lF1iKuhjE6Zrs5z24Nh8sC4w3Iv7Sg0KMFL6w" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-white">
+
+<header class="text-center py-3">
+    <img src="images/logo.png" alt="Logo de Kettlebell" class="logo img-fluid">
+    <h1>Elige tu Temporizador EMOM</h1>
+</header>
+
+<main class="container my-5">
+    <section class="mb-5">
+        <h2>Selecciona el Modo</h2>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a href="index.html?mode=kettlebell" class="btn btn-warning btn-lg">EMOM Kettlebell</a>
+            <a href="index.html?mode=simple" class="btn btn-primary btn-lg">EMOM Simple</a>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2>Artículos Recomendados</h2>
+        <div class="row articles-container" id="dynamicArticles">
+            <!-- Los artículos serán generados dinámicamente aquí -->
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const articles = [
+                    {
+                        title: "Beneficios del Kettlebell",
+                        description: "Explora los beneficios del entrenamiento con kettlebell...",
+                        link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10910645/"
+                    },
+                    {
+                        title: "Guía para Principiantes",
+                        description: "Una guía para principiantes que cubre los fundamentos...",
+                        link: "https://nzihf.ac.nz/fitness-training/kettlebell-exercise-beginners-guide/"
+                    },
+                    {
+                        title: "Cómo Empezar",
+                        description: "Guía básica para comenzar con el entrenamiento de kettlebell...",
+                        link: "https://www.strongfirst.com/get-started-kettlebell-training/"
+                    }
+                ];
+                const container = document.getElementById("dynamicArticles");
+                articles.forEach(article => {
+                    const card = document.createElement("div");
+                    card.className = "col-md-4";
+                    card.innerHTML = `
+                        <div class="card bg-secondary text-white mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">${article.title}</h5>
+                                <p class="card-text">${article.description}</p>
+                                <a href="${article.link}" class="btn btn-primary" target="_blank">Leer más</a>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            });
+        </script>
+    </section>
+</main>
+
+
+<section id="sobre-nosotros" class="card bg-secondary text-white p-4 my-5">
+    <h2>Sobre Nosotros</h2>
+    <p>
+        En <strong>Kettlebell EMOM Timer</strong>, estamos comprometidos con ayudarte a alcanzar tus objetivos de entrenamiento 
+        mediante herramientas intuitivas y efectivas. Nuestra misión es ofrecer soluciones que optimicen tu rendimiento 
+        mientras te enfocas en lo más importante: ¡Tu progreso!
+    </p>
+    <p>
+        Si tienes alguna sugerencia o comentario, no dudes en ponerte en contacto con nosotros. ¡Estamos aquí para apoyarte!
+    </p>
+</section>
+
+<aside class="my-4">
+    <!-- Botón para acceder a la documentación -->
+    <div class="text-center mt-4">
+        <a href="documentacion.html" class="btn btn-info btn-lg">Ver Documentación</a>
+    </div>
+</aside>
+
+
+
+
+<footer class="text-center py-3 bg-secondary text-white">
+    <footer class="text-center py-3 bg-secondary text-white">
+    <p>&copy; 2024 EMOM Kettlebell Timer</p>
+    <p>Programado por Samanda Sanon</p>
+    <p>Síguenos en:
+        <a href="https://github.com/Sam-cmd-power" class="text-white me-3" target="_blank">
+            <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/samandasanon" class="text-white" target="_blank">
+            <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+        </a>
+    </p>
+</footer>
+
+<button id="back-to-top" class="btn btn-success position-fixed" style="bottom: 20px; right: 20px;" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Volver Arriba</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76A2YLNVqk6RZNF6ABu2T9zY6XJcQO9AAFl0pHuHiIB40f6VlieEvoBoqUW+rJ6" crossorigin="anonymous"></script>
+
+</body>
+</html>
