@@ -308,10 +308,10 @@ aside p {
 
 
 #config-list {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding-left: 0; /* Elimina el espacio a la izquierda */
+    list-style-type: none; 
+    padding-left: 0;
 }
 
 #config-list li {
-    padding-left: 0; /* Asegura que no haya espacio adicional en los ítems */
+    padding-left: 0; 
 }
