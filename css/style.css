@@ -1,0 +1,317 @@
+/* Fuente general para el cuerpo del texto */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuente y estilo para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Estilo para secciones */
+.full-width-section, .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo general para los campos de formulario */
+input[type="number"], .form-control {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid #B8860B;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="number"]:focus, .form-control:focus {
+    outline: none;
+    border-color: #2196f3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+/* Estilo de los botones del formulario */
+button, .btn {
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 12px;
+    color: #ffffff;
+    transition: background-color 0.3s;
+    min-width: 140px; /* Ajuste del tamaño de los botones */
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* Colores de los botones */
+.btn-warning {
+    background-color: #B8860B;
+}
+.btn-warning:hover {
+    background-color: #b37700;
+}
+
+/* Si se necesita otro estilo de botón para el "Detener" */
+#stopButton {
+    background-color: #c62828;
+    border: none;
+}
+
+#stopButton:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Vista del temporizador */
+#countdownView {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+#countdownDisplay {
+    font-size: 4rem;
+}
+
+#cycleCountDisplay, #repsCountDisplay {
+    font-size: 1.5rem;
+}
+
+/* Notificación */
+#roundNotification {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b8420b;
+    padding: 10px;
+    background-color: #444444;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Botón para volver arriba */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #388e3c;
+}
+
+/* Estilo para las tarjetas de artículos */
+.articles-container .article-preview, .card {
+    background-color: #444444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.article-preview h3, .card-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.article-preview p, .card-text {
+    color: #cccccc;
+}
+
+.article-preview a, .card a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.option-button, .btn-lg {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 12px 16px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #B8860B;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    min-width: 140px; /* Ajuste de tamaño */
+}
+
+.option-button:hover, .btn-lg:hover {
+    background-color: #b37700;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    button, .btn {
+        margin-bottom: 10px;
+        width: auto;
+    }
+    #countdownView {
+        width: 100%;
+    }
+}
+
+#sobre-nosotros {
+    background-color: #444444;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#sobre-nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #B8860B;
+}
+
+#sobre-nosotros p {
+    font-size: 1.2rem;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+/* Footer centrado */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Centrado de los botones dentro del contenedor flex */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.d-flex button {
+    width: auto;
+    max-width: 200px;
+}
+
+#configSummary {
+    text-align: center;
+}
+
+#stopButton {
+    background-color: #c62828;
+    border: none;
+}
+
+#stopButton:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+aside h3 {
+    font-size: 1.5rem;
+    color: #B8860B;
+}
+
+aside {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+aside p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+/* Contenedor general */
+.container.my-5 {
+    max-width: 1140px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Asegurarse de que el texto dentro del contenedor sea legible y estilizado */
+.container.my-5 p {
+    font-size: 1.2rem; /* Tamaño de fuente adecuado */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #cccccc; /* Color de texto más suave para contraste */
+}
+
+.container.my-5 h1, .container.my-5 h2, .container.my-5 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #ffffff; /* Aseguramos que los encabezados sean blancos */
+    text-align: center; /* Alineación centrada */
+}
+
+/* Ajustes para una mejor visualización en móviles */
+@media (max-width: 600px) {
+    .container.my-5 {
+        padding: 10px; /* Reduce el espaciado en pantallas pequeñas */
+    }
+}
+
+
+#config-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Elimina el espacio a la izquierda */
+}
+
+#config-list li {
+    padding-left: 0; /* Asegura que no haya espacio adicional en los ítems */
+}
